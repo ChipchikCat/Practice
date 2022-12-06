@@ -3,9 +3,6 @@ import sys, random, time
 try:
     import bext
 except ImportError:
-    print('This program requires the bext module, which you')
-    print('can install by following the instructions at')
-    print('https://pypi.org/project/Bext/')
     sys.exit()
 
 WIDTH, HEIGHT = bext.size()
@@ -19,6 +16,7 @@ UP_RIGHT = "ur"
 UP_LEFT = " ul"
 DOWN_RIGHT = "dr"
 DOWN_LEFT = "dl"
+DIRECTIONS = (UP_RIGHT, UP_LEFT, DOWN_RIGHT, DOWN_LEFT)
 
 COLOR = "color"
 X = "x"
